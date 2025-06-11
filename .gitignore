@@ -50,26 +50,3 @@ build/
 # Fichiers personnels
 notes.txt
 todo.txt
-
-# 1. Initialiser le dépôt Git
-git init
-
-# 2. Créer le fichier .gitignore
-echo "*.DS_Store" >> .gitignore
-echo "Thumbs.db" >> .gitignore
-echo "*.log" >> .gitignore
-
-# 3. Ajouter tous les fichiers
-git add -A
-
-# 4. Premier commit
-git commit -m "Initial commit: Structure du projet CV"
-
-# 5. Créer une branche de développement
-git branch develop
-git checkout develop
-
-# 6. Pour se connecter à GitHub
-git remote add origin https://https://github.com/ZacR13-dev/mon-cv-en-ligne
-git push -u origin main
-git push -u origin develop
