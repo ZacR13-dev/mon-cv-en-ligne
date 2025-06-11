@@ -38,7 +38,7 @@ CV en ligne responsive créé avec HTML5 et CSS3 dans le cadre de la formation D
 - Compatible avec tous les navigateurs modernes
 
 ## Auteur
-Prénom Nom - Étudiant Développeur Web et Web Mobile
+Kevin Reis - Étudiant Développeur Web et Web Mobile
 
 ## Licence
 Projet réalisé dans le cadre de la formation - Tous droits réservés 
