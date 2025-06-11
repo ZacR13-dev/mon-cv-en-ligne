@@ -1,0 +1,272 @@
+/* =====================
+   RESPONSIVE DESIGN
+   Media Queries pour différents écrans
+   ===================== */
+
+/* Tablettes en mode paysage (1024px et moins) */
+@media screen and (max-width: 1200px) {
+    .cv-wrapper {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .lien-photo {
+        position: static;
+        transform: none;
+        margin-bottom: 20px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .colonne-gauche,
+    .colonne-droite {
+        width: 100%;
+    }
+    
+    .colonne-gauche {
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablettes en mode portrait (768px et moins) */
+@media screen and (max-width: 768px) {
+    /* Header ajustements */
+    .header-principal {
+        padding: 40px 20px;
+    }
+    
+    .photo-profil {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .container-header h1 {
+        font-size: 2.5em;
+    }
+    
+    .titre-poste {
+        font-size: 1.3em;
+    }
+    
+    .contact-header {
+        gap: 20px;
+    }
+    
+    .contact-item {
+        font-size: 0.9em;
+    }
+    
+    /* Sections ajustements */
+    .colonne-gauche,
+    .colonne-droite {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    /* Footer */
+    .container-footer a {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+}
+
+/* Smartphones (480px et moins) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    
+    .cv-wrapper {
+        margin: 0;
+        box-shadow: none;
+    }
+    /* Header mobile */
+    .header-principal {
+        padding: 30px 15px;
+    }
+    
+    .photo-profil {
+        width: 100px;
+        height: 100px;
+        border-width: 3px;
+    }
+    
+    .container-header h1 {
+        font-size: 2em;
+    }
+    
+    .titre-poste {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+    
+    .contact-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Contenu principal */
+    .contenu-principal {
+        padding: 0;
+    }
+    
+    .container {
+        padding: 0;
+        gap: 0;
+    }
+    
+    .colonne-gauche,
+    .colonne-droite {
+        padding: 15px;
+    }
+    
+    /* Textes et espacements */
+    body {
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+    
+    section {
+        margin-bottom: 20px;
+    }
+    
+    /* Compétences - étoiles plus petites */
+    .niveau-competence i {
+        font-size: 1em;
+    }
+    
+    /* Formations, stages, expériences */
+    .formation-header,
+    .stage-header,
+    .experience-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .date {
+        font-size: 0.85em;
+    }
+    
+    /* Footer mobile */
+    .footer-principal {
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    
+    .container-footer a {
+        font-size: 1.3em;
+        margin: 0 8px;
+    }
+    
+    .copyright {
+        font-size: 0.8em;
+        margin-top: 10px;
+    }
+}
+
+/* Très petits écrans (320px et moins) */
+@media screen and (max-width: 320px) {
+    /* Photo encore plus petite */
+    .photo-profil {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* Titres ajustés */
+    .container-header h1 {
+        font-size: 1.5em;
+    }
+    
+    .titre-poste {
+        font-size: 1em;
+    }
+    
+    /* Icônes contact plus petites */
+    .contact-item i {
+        font-size: 1em;
+    }
+    
+    .contact-item {
+        font-size: 0.85em;
+    }
+    
+    /* Sections avec moins de padding */
+    .colonne-gauche,
+    .colonne-droite {
+        padding: 10px;
+    }
+    
+    /* Footer très petit écran */
+    .container-footer a {
+        font-size: 1.2em;
+        margin: 0 5px;
+    }
+}
+
+/* Grands écrans (1400px et plus) */
+@media screen and (min-width: 1400px) {
+    /* Photo plus grande */
+    .photo-profil {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Textes légèrement plus grands */
+    .container-header h1 {
+        font-size: 3.5em;
+    }
+    
+    .titre-poste {
+        font-size: 1.7em;
+    }
+}
+
+/* Mode paysage pour mobiles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .header-principal {
+        padding: 20px 0;
+    }
+    
+    .photo-profil {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .container-header h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Amélioration de l'accessibilité pour les préférences utilisateur */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+}
+
+/* Support des écrans haute résolution */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    .photo-profil {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
